@@ -5,7 +5,10 @@ messages in the chat (provided as Server.java). The following is designed for Ma
 but it can be similarly adapted for Windows.
 
   1) The user must have downloaded the MySQL JDBC driver and inserted it into the classpath.
-  Accordingly, the user must start a MySQL server and a MySQL client.
+  Accordingly, the user must start a MySQL server and a MySQL client. "myuser" and "mypassword"
+  contained on Line 26 of the DatabaseManager.java should be changed to the login information
+  of the MySQL client.
+  
   Then, to run the program, the user must enter 
   
   'java -cp .:$HOME/myWebProject/mysql-connector-java-8.0.{xx}/mysql-connector-java-8.0.{xx}.jar LoginPage Server-IP'
