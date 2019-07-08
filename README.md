@@ -16,7 +16,7 @@ but it can be similarly adapted for Windows.
   into the terminal, where "xx" is the driver version and Server-IP is the IP address of the server the user wants 
   to connect to in order to relay messages.
   
-  2) The user must run the Server file independently, which will handle all messages in the chat.
+  2) The user must run the Server file independently, which will handle all messages in the chat. The program assumes that port 65501 is not in use.
   
   Messenger is a instant messaging program designed in Java Swing that allows users to communicate with each other 
   through a Server. Through a MySQL database, user history is established, allowing communications from former 
