@@ -23,7 +23,7 @@ public class DatabaseManager {
 	public DatabaseManager() {
 		try {
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/userdb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-					"myuser", "Buckodabo2");
+					"myuser", "mypassword");
 			statement = connection.createStatement();
 		}
 		catch (SQLException e) {
