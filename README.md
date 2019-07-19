@@ -13,12 +13,11 @@ but it can be similarly adapted for Windows.
   
   'java -cp .:$HOME/myWebProject/mysql-connector-java-8.0.{xx}/mysql-connector-java-8.0.{xx}.jar LoginPage Server-IP'
   
-  into the terminal, where "xx" is the driver version and Server-IP is the IP address of the server the user wants 
+  into the command line, where "xx" is the driver version and Server-IP is the IP address of the server the user wants 
   to connect to in order to relay messages.
   
   2) The user must run the chat-handling Server file independently of the Client file (LoginPage.java). The program assumes that port 65501 is not in use.
   
   Messenger is a instant messaging program designed in Java Swing that allows users to communicate with each other 
   through a Server. Through a MySQL database, user history is established, allowing communications from former 
-  sessions to be readily accessed. To enhance user security, the BCrypt hashing function is used along with a 
-  user-specific salt to store the password as a hashcode. 
+  sessions as well as prior friend histories to be readily accessed. To enhance user security, the BCrypt hashing function is employed along with a user-specific salt to store the user password as a hashcode. 
