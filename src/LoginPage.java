@@ -35,7 +35,6 @@ public class LoginPage implements ActionListener {
 	
 	public static void main(String[] args) {
 		String IP = args[0];
-		IP = "192.168.2.3";
 		frame = new JFrame();
 		frame.setResizable(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
