@@ -1,13 +1,15 @@
 # Messenger
 
-IMPORTANT - MUST READ: In order for this program to work, two server connections must be established: a MySQL server and a Server for handling
+IMPORTANT - MUST READ: This program can be tricky to set up at first. In order for this program to work, two server connections must be established: a MySQL server and a Server for handling
 messages in the chat (provided as Server.java). The following is designed for Mac OS users,
 but it can be similarly adapted for Windows.
 
   1) The user must have downloaded the MySQL JDBC driver and inserted it into the classpath.
-  Accordingly, the user must start a MySQL server and a MySQL client. "myuser" and "mypassword"
-  contained on Line 26 of the DatabaseManager.java should be changed to the login information
-  of the MySQL client.
+  Accordingly, the user must start a MySQL server and a MySQL client. Much of the code in the
+  DatabaseManager.java file corresponds to my personal SQL server; accordingly, the user must
+  create the appropriate table and database names in order for it to function properly. For example,
+  "myuser" and "mypassword"  contained on Line 26 of the DatabaseManager.java should be changed to 
+  the login information of the MySQL client.
   
   Then, to run the program, the user must enter 
   
@@ -17,6 +19,8 @@ but it can be similarly adapted for Windows.
   to connect to in order to relay messages.
   
   2) The user must run the chat-handling Server file independently of the Client file (LoginPage.java). The program assumes that port 65501 is not in use.
+  
+  
   
   Messenger is a instant messaging program designed in Java Swing that allows users to communicate with each other 
   through a Server. Through a MySQL database, user history is established, allowing communications from former 
